@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="utf-8">
+    <title>Anketa</title>
+	</head>
+	<body>
+      <b>User name:</b>
+      <input type="text" size="30"><br>
+      <b>Email:</b>
+      <input type="email" size="30"><br>
+      <b>Password:</b>
+      <input type="password" minlength="6" size="25"><br>
+      <b>Sex:</b>
+      <input type="radio" name="Sex" value="Male" id="Male" checked><label for="Male">Male</label>
+      <input type="radio" name="Sex" value="Female" id="Female"><label for="Female">Female</label><br>
+      <b>Age:</b>
+      <input type="number" min="18" max="110" name="age" value="18"><br>
+      <b>Married:</b>
+      <input type="radio" name="Married" value="Yes" id="Yes"><label for="Yes">Yes</label>
+      <input type="radio" name="Married" value="No" id="No" checked><label for="No">No</label><br>
+      <b>Phone:</b>
+      <input type="tel" name="tel" placeholder="38-000-123-45-67" pattern="38[0-9]{3}-[0-9]{2}-[0-9]{2}"><br>
+      <b>City:</b>
+      <select name="town">
+        <option disabled>Выберите город</option>
+        <option value="Киев">Киев</option>
+        <option selected value="Харьков">Харьков</option>
+        <option value="Днепр">Днепр</option>
+        <option value="Одесса">Одесса</option>
+       </select><br>
+      <b>About:</b><br>
+      <textarea rows="6" cols="30" maxlength="300" name="about"></textarea><br>
+        <input type="submit" value="Отправить"><br>
+  </body>    
+</html>

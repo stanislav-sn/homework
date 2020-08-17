@@ -1,0 +1,10 @@
+input[type="radio"].styled + label::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #889DBA;
+    margin-right: 5px;
+    vertical-align: middle;
+  
+  }
