@@ -1,0 +1,28 @@
+body {
+    margin: 30px;
+}
+img {
+    max-width: 60%;
+    
+   
+}
+div {
+    display: block;
+}
+.container {
+    box-shadow: 0 0 5px;
+    padding: 20px;
+    }
+.block {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    padding: 25px;
+
+}
+
+.blocks::after {
+    content: '';
+    display: block;
+    clear: both;
+}
