@@ -41,3 +41,9 @@ alert('Сумма ' + summa);
 alert('Произведение ' + proizv);
 alert('Разность ' + raznost);
 alert('Частное ' + Math.round(chast));
+
+// 5)
+let rast = 384400
+    speed = prompt('Введите скорость корабля (км/ч)')
+    time = rast / speed;
+alert('Время полета до луны (ч) ' + Math.round(time));
