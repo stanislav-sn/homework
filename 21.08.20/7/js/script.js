@@ -1,21 +1,21 @@
 "use strict";
 
-let greeting = '';
+let greeting;
 let lang = prompt('Введите язык', 'ru, en, de');
 
 if (lang === 'ru') {
-    alert( 'Привет' );
+    greeting = alert( 'Привет' );
 } else
 if (lang === 'en') {
-    alert( 'Hello' );
+    greeting = alert( 'Hello' );
 } else
 if (lang === 'de') {
-    alert( 'Hallo' );
+    greeting = alert( 'Hallo' );
 } else;
 
 switch (lang) {
-    case 'ru': alert( 'Привет' ); break;
-    case 'en': alert( 'Hello' ); break;
-    case 'de': alert( 'Hallo' ); break;
+    case 'ru': greeting = alert( 'Привет' ); break;
+    case 'en': greeting = alert( 'Hello' ); break;
+    case 'de': greeting = alert( 'Hallo' ); break;
     default: alert( 'Неизвестное значение' );
   }
