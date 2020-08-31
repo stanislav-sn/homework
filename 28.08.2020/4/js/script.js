@@ -7,6 +7,8 @@ let d = +prompt('Введите диапазон', '1');
 
 for (; i <= d; i++) {
 	if (i % 2 === 0) {
+		
+	} else {
 		alert(sumInput(i));
 	}
 }
