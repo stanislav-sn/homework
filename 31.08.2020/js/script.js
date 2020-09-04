@@ -41,3 +41,26 @@ console.log(smartPhone);
 	// (которая уже имеет телефон). Какое именно свойство удалять или добавлять - также читается из prompt. 
 	// Какое значение будет у добавленного свойства - тоже берется из prompt. При нажатии на Отмена при появлении prompt 
 	// редактирование person заканчивается. И обновленные данные распечатываются в консоли.
+
+while (true) {
+	var action = prompt('Enter action "update" or "delete"', 'update');
+	
+	if (action === null) break;
+
+	if (action === 'update') {
+		property = prompt('Enter property','');
+		if (property !== null) {
+			person[property] = prompt('Enter value of property', '');
+		} else {
+			console.log(person); break;
+		} 
+	} else if (action === 'delete') {
+		property = prompt('Enter property','job');
+		if (property in person) {
+			delete person[property];
+		} else {
+			console.log(person); break;
+		}
+	}  
+}
+console.log(person);
