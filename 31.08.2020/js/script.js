@@ -64,3 +64,37 @@ while (true) {
 	}  
 }
 console.log(person);
+
+// 4) Динамически (скриптом) создайте HTML элемент <dl>. Переберите в цикле (for..in) сгенерированный 
+// 	  ранее объект person, добавляя dt - для имени свойства и dd - для значения свойства 
+// 	  (работа с DOM - с использованием методов jQuery).
+
+
+
+// 5) Создайте объект dates для хранения дат. Первая дата – позавчера. 
+// 	  Вторая дата – текущая дата (new Date) минус 365 дней. Из prompt читается дата в формате yyyy-MM-dd. 
+// 	  Проверьте, попадает ли введенная дата в диапазон дат объекта dates.
+
+var date1 = new Date();
+var date2 = new Date();
+
+var dates = {
+	'first date': date1.toDateString(date1.setDate(date1.getDate() - 2)),
+	'second date': date2.toDateString(date2.setDate(date2.getDate() - 365))
+};
+console.log(dates);
+
+var someDate = prompt('Enter date in format yyyy-MM-dd','2020-09-04');
+if (new Date(someDate) >= Date.parse(dates['second date']) && new Date(someDate) <= Date.parse(dates['first date'])) {
+	alert('Дата попала в диапазон дат');
+} else {
+	alert('Дата не попала в диапазон дат');
+}
+
+
+// 6) Создайте структуру данных, полностью описывающую html-разметку картинки. 
+// 	  С помощью методов jQuery добавьте ее на страницу со всеми атрибутами, 
+// 	  читая значения свойств из созданного объекта.
+// 	  <img src="https://www.google.com.ua/logos/doodles/2017/bella-akhmadulinas-80th-birthday-5134676388741120.3-law.gif"
+//    alt="" style="border: 1px solid #ccc" width="200" />
+
