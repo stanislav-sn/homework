@@ -53,3 +53,19 @@ function min (number) {
 
 console.log( min(0, -1, 100, 500, 100500) );
 
+// 6) Не используя методы массива, напишите функцию аналог метода shift. Функция удаляет из переданного в параметре 
+// массива первый элемент и возвращает новый массив.
+
+function shift (arr) {
+    if (arr.length > 0) {
+        for (let i = 1; i < arr.length; i++) {
+            arr[i - 1] = arr[i];
+        }
+        arr.length = arr.length - 1;
+    }
+    return arr;
+}
+    
+let checkArr = [1, '2', 3, 'banana', 0];
+let result = shift(checkArr);
+console.log(result);
