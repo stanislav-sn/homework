@@ -29,7 +29,7 @@ console.log(data); // ['a', 'b', 'c]
 возможностями. И напишите пример боя, используя соответствующие методы и свойства. */
 
 function Warrior(name, health,  power) {
-    this.name = name || 'John';
+    this.name = name || 'Jake';
     this.health = health;
     this.power = power;
 }
